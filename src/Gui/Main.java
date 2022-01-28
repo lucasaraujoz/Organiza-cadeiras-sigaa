@@ -368,13 +368,24 @@ public class Main {
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
                 if (e.getKeyCode() == KeyEvent.VK_DELETE) {
-                    System.out.println("Deletar");
                     int row = tableFinalizadas.getSelectedRow();
                     String codigo = tableFinalizadas.getValueAt(row, 1).toString();
                     Aluno u = cs.getUsuarios().get(comboBox1.getSelectedIndex());
                     u.removerDisciplinaFinalizada(codigo);
                     recarregarTabela(cs);
                     JOptionPane.showMessageDialog(null, "Disciplina removida com sucesso!");
+                }
+            }
+        });
+        tableSequencia.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_INSERT) {
+                    int row = tableSequencia.getSelectedRow();
+                    String codigo = tableSequencia.getValueAt(row, 1).toString();
+                    textField1.setText(codigo);
+                    recarregarTabela(cs);
                 }
             }
         });
