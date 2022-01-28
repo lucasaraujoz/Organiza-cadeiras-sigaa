@@ -1,0 +1,90 @@
+disciplina;codigo;pre-requisito;area;tipo;horario;
+#1
+Introdução a Computação; DEIN0075 ;0;1;BASICA;T1
+Algoritimo 1;DEIN0076;0;1;BASICA;T2
+Calculo 1; DEMA0339;0;1;BASICA; T3;
+Calculo Vetorial; DEMA0340 ;0;1;BASICA; T4;
+Etica e Sociedade; DFIL0315;0;1;EL2; T5;
+#2
+Fisica 1; DEFI0254 ;DEMA0339;1;BASICA; T1;
+Linguagem de Programação 1; DEIN0030 ;DEIN0076 ;1;BASICA; T2;
+Matematica Discreta e Lógica; DEIN0078 ;0;1;BASICA; T3;
+Cálculo 2; DEMA0341 ;DEMA0339 ;1;BASICA; T4;
+Algebra Linear; DEMA0342 ;DEMA0340;1;BASICA; T5;
+#3
+Antropologia; DSOC0055 ;0;1;EL2; T1;
+Sociologia; DSOC0313 ;0;1;EL2; T2;
+Fisica 3; DEFI0255 ;DEFI0254 ;1;BASICA; T3;
+Arquitetura de computadores; DEIN0079 ;DEIN0078 ;1;BASICA; T4;
+Estrutura de Dados ; DEIN0080 ;DEIN0030 ;1;BASICA; T5;
+Linguagem de Programação 2; DEIN0225 ;DEIN0076 ;1;BASICA; T6;
+Calculo 3; DEMA0338 ;DEMA0341 ;1;BASICA; T7;
+#4
+Linguagens Formais e Autômatos; DEIN0082 ;DEIN0078 ;1;BASICA; T1;
+Estrutura de Dados 2; DEIN0083 ;DEIN0080 ;1;BASICA; T2;
+Rede de Computadores 1; DEIN0088 ;DEIN0079,DEMA0339;1;BASICA; T3;
+Sistemas Operacionais 1; DEIN0114 ;DEIN0079,DEIN0080;1;BASICA; T4;
+Engenharia de Software; DEIN0226;DEIN0225 ;1;BASICA; T5;
+Estatistica e Probabilidade; DEMA0343 ;DEMA0338 ;1;BASICA; T6;
+#5
+Circuitos Digitais 1;	DEEE0220  ;DEIN0078  ;1;BASICA; T1;
+Laboratorio de Circuitos Digitais 1; DEEE0221  ;0 ;1;BASICA; T2;
+Compiladores; DEIN0086  ;DEIN0080,DEIN0082;1;BASICA; T3;
+Processo de Software; DEIN0087  ;DEIN0226;1;BASICA; T4;
+Banco	de Dados 1; DEIN0115  ;DEIN0076  ;1;BASICA; T5;
+#6
+Teoria da Computacao; DEIN0085  ;DEIN0082  ;1;BASICA; T1;
+Calculo Numérico; DEIN0117  ;DEIN0030,DEMA0338;1;BASICA; T2;
+Inteligencia Artificial; DEIN0118  ;DEIN0078,DEIN0083;1;BASICA; T3;
+Equações Diferenciais 1; DEMA0344  ;DEMA0338  ;1;BASICA; T4;
+#7
+Circuito Digital 2; DEEE0222  ;DEEE0220  ;1;EL1; T1;
+Laboratorio de Circuitos Digitais 2; DEEE0226  ;0 ;1;EL1; T2;
+Algorito 2; DEIN0093  ;DEIN0083  ;1;EL1; T3;
+Avaliação de Desempenho; DEIN0095  ;DEMA0343,DEIN0114;1;EL1; T4;
+Computação Paralela; DEIN0097  ;DEIN0114 ;1;EL1; T5;
+Engenharia da Informação; DEIN0098  ;DEIN0226  ;1;EL1; T6;
+Engenharia  de Requisitos; DEIN0099  ;DEIN0226  ;1;EL1; T7;
+Hipermídia; DEIN0101  ;DEIN0226  ;1;EL1; T1;
+Interface Humano-Computador; DEIN0102   ;DEIN0226   ;1;EL1; T3;
+Laboratorio de Engenharia de Software; DEIN0103    ;DEIN0115,DEIN0226;1;EL1; T4;
+Processamento de Imagens; DEIN0104    ;DEIN0083,DEMA0343;1;EL1; T5;
+Redes de Computadores 2; DEIN0106  ;DEIN0088  ;1;EL1; T2;
+Sistemas Distribuidos; DEIN0107  ;DEIN0088,DEIN0114;1;EL1; T3;
+Sistemas Inteligentes; DEIN0108  ;DEIN0118;1;EL1; T4;
+Topicos Especiais de Computação; DEIN0109  ;"0";1;EL1; T5;
+Computação Móvel; DEIN0112  ;DEIN0088;1;EL1; T6;
+Processos Estocásticos; DEIN0116  ;DEMA0343  ;1;EL1; T3;
+Pesquisa Operacional; DEIN0119  ;DEMA0342,DEIN0080;1;EL1; T4;
+Computação Gráfica; DEIN0120  ;DEMA0342,DEIN0083;1;EL1; T5;
+Sistemas Operacionais 2; DEIN0184 ;DEIN0114;1;EL1; T6;
+Banco de dados 2; DEIN0185 ;DEIN0115 ;1;EL1;T6;
+Arquitetura de Software;DEIN0230 ;DEIN0226 ;1;EL1;T6;
+Gerencia de Projetos de Softwares; DEIN0231 ;DEIN0087;1;EL1;T6;
+Introdução a Criptografia; DEIN0232  ;DEIN0030,DEIN0080,DEIN0088;1;EL1; T4;
+Introdução a Mineração de Dados; DEIN0233  ;DEMA0343,DEIN0115;1;EL1; T5;
+Introdução a Robotica; DEIN0234;DEMA0341;1;EL1;T5;
+Jogos Digitais;DEIN0235 ;DEIN0080 ;1;EL1;T5;
+LABORATÓRIO DE REDES DE COMPUTADORES; DEIN0236 ;DEIN0088 ;1;EL1;T5;
+LABORATÓRIO DE SOFTWARE BÁSICO;DEIN0238 ;DEIN0079 ;DEIN0114;1;EL1;T5;
+METODOLOGIA DA PESQUISA EM CIÊNCIA DA COMPUTAÇÃO; DEIN0239 ;"0";1;EL1;T5;
+QUALIDADE DO SOFTWARE; DEIN0240 ;DEIN0226 ;1;EL1;T5;
+Realidade Virtual e Aumentada; DEIN0241 ; "0";1;EL1;T5;
+Sistemas de informações geograficas;DEIN0242 ;"0";1;EL1;T5;
+Teste de Software;DEIN0243 ;DEIN0226 ;1;EL1;T5;
+Visao computacional;DEIN0244 ;DEIN0083 ;1;EL1;T5;
+#8
+Empreendedorismo e Inovação;CCCT0034;0;1;EL2; T1;
+Econonomia; DCON0117 ;0;1;EL2; T2;
+Direito Administrativo; DDIR0097;0;1;EL2; T3;
+Direito Constituicional; DDIR0258;0;1;EL2; T4;
+Introdução a Administração;DECC0077 ;0;1;EL2; T5;
+Educação Ambiental; CCCT0045  ;0;1;EL2; T6;
+Filosofia; DFIL0048  ;0;1;EL2; T7;
+Psicologia; DPSI0025   ;0;1;EL2; T1;
+Controle	e Automação; DEEE0224;0;1;EL2; T2;
+Microprocessadores; DEEE0229  ;0 ;1;EL1; T3;
+Engenharia de Software 2; DEIN0100  ;0 ;1;EL1; T4;
+Atividades Complementares;COCO0024;0;1;BASICA;T5;
+Estagio Supervisionado;DEIN0064;0;1;BASICA;T6;
+Trabalho de Conclusão do Curso;DEIN0227;0;1;BASICA;T7;
