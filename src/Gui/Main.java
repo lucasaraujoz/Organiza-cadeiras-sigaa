@@ -388,6 +388,16 @@ public class Main {
                 }
             }
         });
+        tableSequencia.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+                if (e.getKeyCode() == KeyEvent.VK_HOME) {
+                    textField1.setText("");
+                    recarregarTabela(cs);
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {
