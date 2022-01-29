@@ -398,6 +398,23 @@ public class Main {
                 }
             }
         });
+        addMenuBar();
+
+    }
+    //add menu bar
+    private static JMenuBar addMenuBar() {
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menu = new JMenu("Arquivo");
+        JMenuItem menuItem = new JMenuItem("Sair");
+        menuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+        menu.add(menuItem);
+        menuBar.add(menu);
+        return menuBar;
     }
 
     public static void main(String[] args) {
@@ -424,6 +441,7 @@ public class Main {
         frame.setVisible(true);
         //full screen
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        frame.setJMenuBar(addMenuBar());
     }
 
     private void createUIComponents() {
