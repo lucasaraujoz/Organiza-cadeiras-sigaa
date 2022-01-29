@@ -204,10 +204,10 @@ public class Main {
                     DefaultTableModel model = (DefaultTableModel) tableTempor.getModel();
                     model.setRowCount(0);
                     recarregarTabela(cs);
+
                 } catch (Exception exception) {
                     JOptionPane.showMessageDialog(null, "Nenhuma linha selecionado");
                 }
-
             }
         });
         tableSequencia.setDefaultRenderer(Object.class,
@@ -372,6 +372,11 @@ public class Main {
                     Aluno u = cs.getUsuarios().get(comboBox1.getSelectedIndex());
                     u.removerDisciplinaFinalizada(codigo);
                     recarregarTabela(cs);
+                    try {
+                        cs.atualizaUsuario();
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                     JOptionPane.showMessageDialog(null, "Disciplina removida com sucesso!");
                 }
             }
