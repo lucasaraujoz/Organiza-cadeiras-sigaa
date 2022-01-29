@@ -44,7 +44,6 @@ public class Main {
     private JSpinner spinner1;
     private JTable tableFinalizadas;
     private JLabel lblNome;
-    private JButton button1;
     private JTextField textField1;
     private Aluno alunoSel;
 

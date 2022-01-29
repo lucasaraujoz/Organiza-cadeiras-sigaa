@@ -44,6 +44,8 @@ public class DisciplinasControler implements Serializable {
             if (!linha.contains("#")) {
                 String[] dados = linha.split(";");
                 String nome = dados[0].strip();
+                //convert nome para utf-8
+                nome = new String(nome.getBytes("ISO-8859-1"), "UTF-8");
                 String cod = dados[1].strip();
                 String prereq = dados[2].strip();
                 String area = dados[3].strip();
@@ -121,9 +123,9 @@ public class DisciplinasControler implements Serializable {
     public boolean verificar(String compara, String[] array1) {
         if (array1 == null) return false;
         for (String s : array1) {
-                if (compara.equals(s)) {
-                    return true;
-                }
+            if (compara.equals(s)) {
+                return true;
+            }
         }
         return false;
     }
